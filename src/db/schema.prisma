@@ -3,35 +3,6 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "sqlite"
   url      = env("DATABASE_URL")
-}
-
-model User {
-  id        String    @id @default(cuid())
-  userId    String    @unique
-  name      String
-  bio       String?
-  email     String    @unique
-  avatar    String
-  createAt  DateTime  @default(now())
-  updatedAt DateTime  @updatedAt
-  Oauths    Oauth[]
-  sessions  Session[]
-}
-
-model Session {
-  id        String   @id
-  userId    String
-  expiresAt DateTime
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-}
-
-model Oauth {
-  providerId     String
-  providerUserId String
-  userId         String
-  user           User   @relation(fields: [userId], references: [id])
-
-  @@id([providerId, providerUserId])
 }

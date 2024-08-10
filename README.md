@@ -11,13 +11,6 @@ pnpm i -D @eslint/js eslint-plugin-simple-import-sort typescript-eslint
 
 ```
 
-## Storybook
-
-```
-pnpm dlx storybook@latest init
-pnpm i tailwind-merge tailwind-variants
-```
-
 ## Husky
 
 ```

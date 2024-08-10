@@ -78,19 +78,4 @@
   }
 }
 
-@layer components {
-  .navbar-menu {
-    @apply flex h-12 w-full items-center justify-start border-b-2 border-black px-4 align-middle font-medium hover:bg-accent;
-  }
-  .input-div {
-    @apply mb-4;
-  }
 
-  .input-label {
-    @apply block pl-2 text-sm font-extrabold text-black;
-  }
-
-  .input-error {
-    @apply block px-5 pt-1 text-xs text-red-600;
-  }
-}
