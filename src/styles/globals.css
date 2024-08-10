@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Set the base font family and size */
+  html {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+  }
+  body {
+    background-color: #f9f2e2;
+  }
+
+  /* Heading styles */
+  h1 {
+    @apply mb-4 text-4xl font-bold text-gray-900;
+  }
+
+  h2 {
+    @apply mb-3 text-3xl font-semibold text-gray-800;
+  }
+
+  h3 {
+    @apply mb-2 text-2xl font-medium text-gray-700;
+  }
+
+  h4 {
+    @apply mb-2 text-xl font-medium text-gray-700;
+  }
+
+  h5 {
+    @apply mb-2 text-lg font-medium text-gray-700;
+  }
+
+  h6 {
+    @apply mb-2 text-base font-medium text-gray-700;
+  }
+
+  /* Paragraph and body text */
+  p {
+    @apply mb-4 text-base leading-relaxed text-gray-600;
+  }
+
+  /* Small text / captions */
+  .text-small {
+    @apply text-sm leading-normal text-gray-500;
+  }
+
+  /* Large text */
+  .text-large {
+    @apply text-lg leading-relaxed text-gray-700;
+  }
+
+  /* Links */
+  a {
+    @apply text-blue-600 transition-colors duration-200 hover:text-blue-800;
+  }
+
+  /* Lists */
+  ul,
+  ol {
+    @apply mb-4 ml-4;
+  }
+
+  li {
+    @apply mb-2;
+  }
+
+  /* Blockquotes */
+  blockquote {
+    @apply border-l-4 border-gray-300 pl-4 italic text-gray-700;
+  }
+
+  /* Code */
+  code {
+    @apply rounded bg-gray-100 px-1 py-0.5 font-mono text-sm;
+  }
+}
+
+@layer components {
+  .navbar-menu {
+    @apply flex h-12 w-full items-center justify-start border-b-2 border-black px-4 align-middle font-medium hover:bg-accent;
+  }
+  .input-div {
+    @apply mb-4;
+  }
+
+  .input-label {
+    @apply block pl-2 text-sm font-extrabold text-black;
+  }
+
+  .input-error {
+    @apply block px-5 pt-1 text-xs text-red-600;
+  }
+}
