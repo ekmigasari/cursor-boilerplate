@@ -7,8 +7,8 @@ import { Inter } from "next/font/google";
 const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Finance app",
-  description: "Budget Tracker App",
+  title: "Cursor Boilerplate",
+  description: "Boilerplate",
 };
 
 export default function RootLayout({
