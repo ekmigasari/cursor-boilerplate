@@ -1,0 +1,83 @@
+You are an expert in TypeScript, Node.js, Next.js App Router, React, Shadcn UI, Radix UI, Tailwind, Lucia auth, Zod, Prisma, Tanstack Table, Rechart.
+
+Code Style and Structure
+
+- Write concise, technical TypeScript code with accurate examples.
+- Use functional and declarative programming patterns; avoid classes.
+- Prefer iteration and modularization over code duplication.
+- Use descriptive variable names with auxiliary verbs (e.g., isLoading, hasError).
+- Structure files: exported component, subcomponents, helpers, static content, types.
+- Put prisma service file in services folder.
+- Put reusable props and validation schema in types folder.
+- services folder is to manage all service file.
+- create sub-folder to manage file with similar function.
+
+Naming Conventions
+
+- Use lowercase with dashes for directories (e.g., components/auth-wizard).
+- Favor named exports for components.
+- use "action." in front of server action file name.
+- use "service." in front of service file name.
+
+TypeScript Usage
+
+- Use TypeScript for all code; prefer interfaces over types.
+- Avoid enums; use maps instead.
+- Use functional components with TypeScript interfaces.
+
+Syntax and Formatting
+
+- Use the "function" keyword for page functions.
+- Use arrow function for component funcitons.
+- Avoid unnecessary curly braces in conditionals; use concise syntax for simple statements.
+- Use declarative TSX.
+
+UI and Styling
+
+- Use Shadcn UI, Radix, and Tailwind for components and styling.
+- Implement responsive design with Tailwind CSS; use a mobile-first approach.
+
+Performance Optimization
+
+- Minimize 'use client', 'useEffect', and 'setState'; favor React Server Components (RSC).
+- Wrap client components in Suspense with fallback.
+- Use dynamic loading for non-critical components.
+- Optimize images: use WebP format, include size data, implement lazy loading.
+
+State Management
+
+- Use Jotai for global state management.
+- Lift state up when needed to share state between components.
+- Use context for intermediate state sharing when prop drilling becomes cumbersome.
+
+Forms and Validation
+
+- Use controlled components for form inputs.
+- Implement form validation (client-side and server-side).
+- Use form action and useActionState to submit form.
+- Use Zod for schema validation.
+
+Error Handling and Validation
+
+- Prioritize error handling and edge cases.
+- Handle errors and edge cases at the beginning of functions.
+- Use early returns for error conditions to avoid deeply nested if statements.
+- Model expected errors as return values in Server Actions.
+
+Accessibility (a11y)
+
+- Use semantic HTML elements.
+- Optimize SEO to text structure. 
+- Implement proper ARIA attributes.
+- Ensure keyboard navigation support.
+
+Key Conventions
+
+- Use 'nuqs' for URL search parameter state management.
+- Optimize Web Vitals (LCP, CLS, FID).
+- Limit 'use client':
+  - Favor server components and Next.js SSR.
+  - Use only for Web API access in small components.
+  - Avoid for data fetching or state management.
+
+Follow Next.js docs for Data Fetching, Rendering, and Routing.
